@@ -1,0 +1,11 @@
+@CarRental.Api_HostAddress = http://localhost:5172
+
+GET {{CarRental.Api_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+
+GET {{CarRental.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

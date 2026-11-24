@@ -1,0 +1,35 @@
+### Mostrar tabla usuarios 
+GET http://localhost:5172/api/cuentas/usuarios
+
+### Registrar usuario 
+POST http://localhost:5172/api/cuentas/registro
+Content-Type: application/json
+
+{
+  "nombre": "Anghelo",
+  "correo": "prueba@gmail.com",
+  "contrasena": "123"
+}
+
+### Iniciar sesion 
+POST http://localhost:5172/api/cuentas/login
+Content-Type: application/json
+
+{
+  "correo": "prueba@gmail.com",
+  "contrasena": "123"
+}
+
+### Mostrar tabla vehiculos 
+GET http://localhost:5172/api/vehiculos
+
+### Agregar un vehículo 
+POST http://localhost:5172/api/vehiculos
+Content-Type: application/json
+
+{
+  "marca": "Nissan",
+  "modelo": "Sentra",
+  "precioPorDia": 50,
+  "anioFabricacion": 2025
+}
